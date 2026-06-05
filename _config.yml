@@ -20,10 +20,9 @@
 
 title: Das Ulicorn
 description: >- # this means to ignore newlines until "baseurl:"
-    Funkenflug aus flammenden Synapsen
+    I am the Ulicorn cavalry
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
 github_username:  das-ulicorn
 mastodon:
   - username: das_ulicorn
