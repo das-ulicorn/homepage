@@ -29,11 +29,15 @@
 }
 
 
-header .socials li {
-    display: inline-list;
+header .socials {
+    float: right;
+    
+    li {
+	display: inline-block;
 
-    img.favicon {
-	width: 1em;
-	height: 1em;
+	img.favicon {
+	    width: 1em;
+	    height: 1em;
+	}
     }
 }
