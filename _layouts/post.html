@@ -20,7 +20,7 @@ layout: default
 		       >{{ page.author }}</span></li>
       {%- endif -%}
       {%- for tag in page.tags -%}
-        <li><a class="tag" href="{{ '/by-category' | relative_url }}#{{ tag | slugify:'latin' }}">{{ tag }}</a></li>
+        <li class="tag"><a class="tag" href="{{ '/by-category' | relative_url }}#{{ tag | slugify:'latin' }}">{{ tag }}</a></li>
       {%- endfor -%}
     </ul>
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>

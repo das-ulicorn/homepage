@@ -46,6 +46,8 @@ header {
     }
 
     .post-meta {
+	margin-left: -0.5em;
+	
 	li {
 	    display: inline-block;
 	    margin-right: 0.5em;
@@ -54,7 +56,7 @@ header {
 	}
 
 	li.tag {
-	    &::before {
+	    a &::before {
 		content: '#';
 	    }
 
