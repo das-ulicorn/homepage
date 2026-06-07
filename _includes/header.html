@@ -3,10 +3,18 @@
   <div class="wrapper">
     <h1><a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
     <ul class="socials">
-    <li><a href="https://github.com/das-ulicorn/"><img class="favicon" src="https://github.com/das-ulicorn/../../../favicon.ico"></a></li>
-    <li><a href="https://stackexchange.com/users/237459/das-ulicorn/"><img class="favicon" src="https://stackexchange.com/users/237459/das-ulicorn/../../../../favicon.ico"></a></li>
-    <li><a href="https://tech.lgbt/@das_ulicorn/"><img class="favicon" src="https://tech.lgbt/@das_ulicorn/../../../favicon.ico"></a></li>
-    <li><a href="https://app.thestorygraph.com/profile/das_ulicorn"><img class="favicon" src="https://app.thestorygraph.com/profile/das_ulicorn/../../../../favicon.ico"></a></li>
+      {%- for social in site.socials -%}
+      <li><a title="{social.name}"
+	     href="https://{social.site}{social.path}"
+	     ><img class="favicon"
+		   alt="{social.name}"
+		   src="https://services.keeweb.info/favicon/{social.site}/32"
+		   /></a></li>
+      {%- endfor -%}
+    <!-- <li><a href="https://github.com/das-ulicorn/"><img class="favicon" src="https://github.com/das-ulicorn/../../../favicon.ico"></a></li> -->
+    <!-- <li><a href="https://stackexchange.com/users/237459/das-ulicorn/"><img class="favicon" src="https://stackexchange.com/users/237459/das-ulicorn/../../../../favicon.ico"></a></li> -->
+    <!-- <li><a href="https://tech.lgbt/@das_ulicorn/"><img class="favicon" src="https://tech.lgbt/@das_ulicorn/../../../favicon.ico"></a></li> -->
+    <!-- <li><a href="https://app.thestorygraph.com/profile/das_ulicorn"><img class="favicon" src="https://app.thestorygraph.com/profile/das_ulicorn/../../../../favicon.ico"></a></li> -->
     </ul>
   </div>
 </header>

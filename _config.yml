@@ -28,6 +28,20 @@ mastodon:
   - username: das_ulicorn
     instance: tech.lgbt
 
+socials:
+  - name: Fediverse
+    site: tech.lgbt
+    path: /@das_ulicorn/
+  - name: Stack Overflow
+    site: stackexchange.com
+    path: /users/237459/das-ulicorn/
+  - name: GitHub
+    site: github.com
+    path: /das-ulicorn/
+  - name: StoryGraph
+    site: app.thestorygraph.com
+    path: /profile/das_ulicorn
+
 # Build settings
 theme: minima
 plugins:
