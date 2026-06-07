@@ -48,6 +48,7 @@ plugins:
   - jekyll-paginate
 
 paginate: 7
+show_excerpts: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
