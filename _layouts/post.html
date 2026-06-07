@@ -9,22 +9,20 @@ layout: default
   {%- endif -%}{%- endfor -%}
 
   <header class="post-header">
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+    <ul class="post-meta">
+      <li><time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: date_format | replace: ', 00:00','' }}
-      </time>
+      </time></li>
       {%- if page.author -%}
-        • <span itemprop="author" itemscope
+        <li itemprop="author" itemscope
 		itemtype="http://schema.org/Person"
 		><span class="p-author h-card" itemprop="name"
-		       >{{ page.author }}</span></span>
+		       >{{ page.author }}</span></li>
       {%- endif -%}
-      {%- if page.tags.length %}
-          • {% for tag in page.tags %}
-              <a href="{{ '/by-category' | relative_url }}#{{ tag | slugify:'latin' }}">{{ tag }}</a>
-            {% endfor%}
-      {%- endif -%}
-    </p>
+      {%- for tag in page.tags -%}
+        <li><a class="tag" href="{{ '/by-category' | relative_url }}#{{ tag | slugify:'latin' }}">{{ tag }}</a></li>
+      {%- endfor -%}
+    </ul>
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
   </header>
 
